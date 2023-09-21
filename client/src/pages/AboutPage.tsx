@@ -1,7 +1,6 @@
 import Typography from "@mui/material/Typography";
 import { Container, Divider } from "@mui/material";
 import { Box } from "@mui/material";
-import myImage from "./../public/assets/images/card.jpg";
 import { useSelector } from "react-redux";
 const AboutPage = () => {
   return (
