@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # business-cards-app
+=======
+# react-business-cards-app
+>>>>>>> 15634d453c4ba28611a8b15b254b15f7bde0fbdc
 
  NodeJS + React project
 ***********************************************
@@ -19,4 +23,10 @@ Aa1234!
 
 Enter as regular user:
 regular@gmail.com
+<<<<<<< HEAD
 Aa1234!
+=======
+Aa1234!
+
+ 
+>>>>>>> 15634d453c4ba28611a8b15b254b15f7bde0fbdc
