@@ -2,7 +2,7 @@ const express = require("express");
 const auth = require("../../auth/authService");
 const { handleError } = require("../../utils/handleErrors");
 const { generateUserPassword } = require("../helpers/bcrypt");
-const normalizeUser = require("../helpers/normalizeUser");
+const normalizeUser = require("../helpers/confirUser");
 const {
   registerUser,
   loginUser,

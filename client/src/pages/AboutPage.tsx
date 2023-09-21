@@ -1,48 +1,71 @@
-import React from "react";
-import Container from "@mui/material/Container";
-import PageHeader from "./../components/PageHeader";
-import Grid from "@mui/material/Grid";
-
+import Typography from "@mui/material/Typography";
+import { Container, Divider } from "@mui/material";
+import { Box } from "@mui/material";
+import myImage from "./../public/assets/images/card.jpg";
+import { useSelector } from "react-redux";
 const AboutPage = () => {
   return (
-    <Container maxWidth="lg">
-      <PageHeader
-        title="About Page"
-        subtitle="On this page you can find explanations about using the application"
-      />
-
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={8} alignSelf="center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-          repellendus nostrum. Dolorem voluptatem dolor ipsam, ab voluptates
-          laboriosam qui voluptate cum consectetur exercitationem, tempore
-          facere quod iste nemo modi rerum natus libero cupiditate quidem esse
-          soluta assumenda veritatis porro fuga? Officiis voluptatem ex odio
-          itaque. Delectus, quod qui eligendi cupiditate, asperiores ratione
-          iusto aspernatur veniam accusamus molestiae ipsum, dignissimos
-          voluptatem perferendis quibusdam! Accusamus consequatur tenetur
-          provident odio magni, debitis placeat commodi cupiditate? Eum officia
-          fuga corrupti aut adipisci totam? Voluptatum fugiat, perspiciatis
-          eveniet ad repellat molestiae eligendi aliquam ratione nostrum est
-          quia ab et, mollitia blanditiis reiciendis minus deserunt eos. Vitae,
-          reiciendis sunt autem, error illum, deleniti ratione quos doloremque
-          accusantium in ipsa rem placeat! Assumenda quibusdam tenetur
-          repellendus quod commodi! Ducimus eaque ratione non sint nulla rem
-          impedit voluptas tenetur labore, enim adipisci voluptate accusamus.
-          Eius, velit nesciunt tempore reprehenderit hic sint, adipisci iure
-        </Grid>
-        <Grid
-          item
-          xs={4}
-          sx={{
-            display: { md: "flex", xs: "none" },
-            justifyContent: "center",
-          }}>
-          <img src="/assets/images/card.jpg" alt="card" width="100%" />
-        </Grid>
-      </Grid>
+    <Container>
+      <Box
+        sx={{
+          marginX: { xs: "", sm: "", md: "", lg: "" },
+          p: 2,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Typography
+          variant="h3"
+          color="primary"
+          fontSize={{ xs: "1rem", lg: "4rem" }}
+        >
+          About Us Page
+        </Typography>
+        <Divider variant="middle" />
+        <Typography align="justify" paragraph={true}>
+          Welcome to our business card advertising website! Our website is
+          designed to showcase various businesses through their business cards.
+          You can easily access our Home Page by clicking on the logo. At the
+          Home Page, you will find vary of information about each business. To
+          view the full card, simply click on the image. If you find a business
+          that you like, you can add their card to your fav-page{" "}
+          <span style={{ fontWeight: "bold", color: "red" }}>
+            Make sure you login first in order to enable the website to save
+            your likes!
+          </span>{" "}
+          To take advantage of all the features of our website, we encourage you
+          to log in or register by clicking on the relevant links at the
+          Navigatior Bar Above.
+        </Typography>
+      
+          <Box>
+            We also have a sandbox page where you can play with exercies we have
+            done at the course and experiment with different features. You may
+            delete any card you like, but be cautious! once you delet a card
+            there is no going back!
+          </Box>
+          <Box>
+            To edit your profile details, simply click on the Profile link at
+            the cards themselves. You may delete any card you like,as long you
+            are it's creator, but be cautious! once you delet a card there is no
+            going back!
+          </Box>
+        <Typography align="justify" paragraph={true}>
+          If you prefer a different theme, you can switch between light and dark
+          mode by clicking on the sun/moon at the menu above. You can also
+          personalize your account by setting a profile picture, which can be
+          done by clicking on your avatar. Thank you for using our website and
+          we hope you find it helpful in discovering new and exciting
+          businesses!
+        </Typography>
+        <img width="33%"
+            src="/assets/images/card.jpg"
+            alt="card for example"
+          />
+      </Box>
     </Container>
   );
 };
 
-export default AboutPage;
+export default AboutPage;
